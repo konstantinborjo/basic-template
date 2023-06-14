@@ -104,22 +104,28 @@
       </div>
 
       <div class="container">
-        <section>
-          <div class="">
-            <h2>Каталог</h2>
-            <h3>Каталог кофейных напитков</h3>
-            <form action="">
+        <section class="catalog">
+          <div class="catalog__wrapper">
+            <h2 class="catalog__title violet-title">Каталог</h2>
+            <h3 class="catalog__drink">Каталог кофейных напитков</h3>
+            <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="value">
-                <p>Цена</p>
+                <legend class="value__title grey">Цена</legend>
                 <div class="value__line range">
+                  <button class="range__toggle range__toggle--min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range__toggle range__toggle--max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
                   <div class="range__bar"></div>
                 </div>
-                <div class="value__form">
-                  <label class="label-min" for="minimum">
-                    <input class="range-input zero" type="number" min="0" max="123" placeholder="0" id="minimum">
+                <div class="value__form input">
+                  <label class="input__description" for="minimum">
+                    <input class="input__field zero" type="number" min="0" max="123" placeholder="0" id="minimum">
                   </label>
-                  <label class="label-max" for="maximum">
-                    <input class="range-input" type="number" min="0" max="123" id="maximum" placeholder="123"
+                  <label class="input__description" for="maximum">
+                    <input class="input__field" type="number" min="0" max="123" id="maximum" placeholder="123"
                       value="123">
                   </label>
                 </div>
