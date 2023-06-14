@@ -6,11 +6,13 @@
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/montserrat/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <div class="page-container">
-    <header class="main-header">
+    <header class="main-header main-header--closed">
       <div class="container">
         <div class="main-header__wrapper">
           <div class="main-header__container">
@@ -18,18 +20,27 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/icons/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg">
-                <img class="main-header__logo-image" src="img/icons/logo-mobile.svg" width="" height="" alt="DrinkGo">
+                <img class="main-header__logo-image" src="img/logo-mobile.svg" width="32" height="36" alt="DrinkGo">
               </picture>
             </a>
-            <button class="main-header__login" type="button">
+            <a class="main-header__login" href="#">
+              <svg width="16" height="16">
+                <use xlink:href="img/icons/stack.svg#login"></use>
+              </svg>
               <span class="visually-hidden">войти</span>
-            </button>
-            <button class="main-header__basket" type="button">
+            </a>
+            <a class="main-header__basket" href="#">
+              <svg width="16" height="16">
+                <use xlink:href="img/icons/stack.svg#basket"></use>
+              </svg>
               <span class="visually-hidden">Корзина</span>
-            </button>
-            <button class="main-header__toggle" type="button">
+            </a>
+            <a class="main-header__toggle" href="#">
+              <svg width="16" height="16">
+                <use xlink:href="img/icons/stack.svg#menu"></use>
+              </svg>
               <span class="visually-hidden">Открыть меню</span>
-            </button>
+            </a>
           </div>
           <nav class="main-header__nav main-nav">
             <div class="main-nav__wrapper">
@@ -58,7 +69,18 @@
         <div class="container">
           <div class="header-image__container">
             <div class="header-image__advertising">
-              <picture></picture>
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/slider-image-desktop.webp 1x, img/slider-image-desktop_2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/slider-image-tablet.webp 1x, img/slider-image-tablet_2x.webp 2x">
+                 <source type="image/webp" srcset="img/slider-image.webp 1x, img/slider-image_2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/slider-image-desktop.png 1x, img/slider-image-desktop_2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/slider-image-tablet.png 1x, img/slider-image-tablet_2x.png 2x">
+                <img class="advertising__image" src="img/slider-image.png" width="280" height="280"
+                  srcset="img/slider-image_2x.png" alt="главное изображение">
+              </picture>
               <div class="header-image__wrapper">
                 <h1 class="visually-hidden">кофе</h1>
                 <h2 class="header-image__title violet-title">новинка!</h2>
@@ -135,29 +157,29 @@
                 <legend class="milk__title">Наличие молока</legend>
                 <ul class="milk__list">
                   <li class="milk__item">
-                    <label class="milk__description" for="">
-                      <input class="milk__button visually-hidden" type="radio" id="" name="" value="" checked="">
+                    <label class="milk__description" for="no">
+                      <input class="milk__button visually-hidden" type="radio" id="no" name="nomatter" value="неважно" checked="">
                       <span class="milk__round"></span>
                       неважно
                     </label>
                   </li>
                   <li class="milk__item">
-                    <label class="milk__description" for="">
-                      <input class="milk__button visually-hidden" type="radio" id="" name="" value="">
+                    <label class="milk__description" for="animal">
+                      <input class="milk__button visually-hidden" type="radio" id="animal" name="animals" value="только животное">
                       <span class="milk__round"></span>
                       только животное
                     </label>
                   </li>
                   <li class="milk__item">
-                    <label class="milk__description" for="loss">
-                      <input class="milk__button visually-hidden" type="radio" id="" name="" value="">
+                    <label class="milk__description" for="tree">
+                      <input class="milk__button visually-hidden" type="radio" id="tree" name="trees" value="только растительное">
                       <span class="milk__round"></span>
                       только растительное
                     </label>
                   </li>
                   <li class="milk__item">
-                    <label class="milk__description" for="">
-                      <input class="milk__button visually-hidden" type="radio" id="" name="" value="">
+                    <label class="milk__description" for="reset">
+                      <input class="milk__button visually-hidden" type="radio" id="reset" name="without" value="без молока">
                       <span class="milk__round"></span>
                       без молока
                     </label>
@@ -169,200 +191,246 @@
                 <legend class="country__title">Страна произростания</legend>
                 <ul class="country__list">
                   <li class="country__item check">
-                    <label class="check__wrapper ">
-                      <input class="check__field" type="checkbox" data="enable">
-                      <div class="check__checkbox"></div>
+                    <label class="check__wrapper " for="brazil">
+                      <input class="check__field" type="checkbox" id="brazil" name="america" value="Бразилия">
+
                       <span class="check__description">Бразилия</span>
                     </label>
                   </li>
                   <li class="country__item check">
-                    <label class="check__wrapper ">
-                      <input class="check__field" type="checkbox" data="enable">
-                      <div class="check__checkbox"></div>
+                    <label class="check__wrapper " for="africa">
+                      <input class="check__field" type="checkbox" id="africa" name="efiopia" value="Эфиопия">>
+
                       <span class="check__description">Эфиопия</span>
                     </label>
                   </li>
                   <li class="country__item check">
-                    <label class="check__wrapper ">
-                      <input class="check__field" type="checkbox" data="enable">
-                      <div class="check__checkbox"></div>
+                    <label class="check__wrapper " for="columbia">
+                      <input class="check__field" type="checkbox" id="columbia" name="latino" value="Колумбия">>
+
                       <span class="check__description">Колумбия</span>
                     </label>
                   </li>
                   <li class="country__item check">
-                    <label class="check__wrapper ">
-                      <input class="check__field" type="checkbox" data="enable">
-                      <div class="check__checkbox"></div>
+                    <label class="check__wrapper " for="rica">
+                      <input class="check__field" type="checkbox" id="rica" name="kosta" value="Коста-Рика">>
+
                       <span class="check__description">Коста-Рика</span>
                     </label>
                   </li>
                   <li class="country__item check">
-                    <label class="check__wrapper ">
-                      <input class="check__field" type="checkbox" data="enable">
-                      <div class="check__checkbox"></div>
+                    <label class="check__wrapper " for="peru">
+                      <input class="check__field" type="checkbox" id="peru" name="argentina" value="Перу">>
+
                       <span class="check__description">Перу</span>
                     </label>
                   </li>
                 </ul>
                 <fieldset class="submit">
                   <legend class="submit__description"></legend>
-                  <button class="submit__button submit__button--ok" type="submit" class="" value="Применить">Применить</button>
-                  <button class="submit__button submit__button--reset" type="reset" class="">Сбросить</button>
+                  <button class="submit__button button--ok" type="submit"
+                    value="Применить">Применить</button>
+                  <button class="submit__button submit__button--reset" type="reset" >Сбросить</button>
                 </fieldset>
               </fieldset>
             </form>
           </div>
         </section>
 
-        <section class="">
+        <section class="sorting">
           <div class="container">
-            <div>
-              <span>Сортировка:</span>
-              <select class="" aria-label="Сортировка">
-                <option value="popular">по умолчанию</option>
-                <option value=" cheap">сначала дорогие</option>
-                <option value=" expensive">сначала дешёвые</option>
-                <option value=" expensive">высокий рейтинг</option>
+            <div class="sorting__wrapper">
+              <span class="sorting__title">Сортировка:</span>
+              <select class="sorting__field" aria-label="Сортировка">
+                <option value="default">по умолчанию</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="cheap">сначала дешёвые</option>
+                <option value="rating">высокий рейтинг</option>
               </select>
             </div>
-            <ul>
-              <li>
-                <div>
-                  <a href="">
-                    <picture></picture>
+            <ul class="catalog-list cards">
+              <li class="cards__item">
+                <div class="cards__wrapper">
+                  <a class="cards__link" href="#">
+                    <!-- ИЗМЕНИ!!! -->
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="img/white-coffe-desktop.webp, img/white-coffe-desktop_2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/white-coffe-tablet.webp, img/white-coffe-tablet_2x.webp 2x">
+                      <source type="image/webp" srcset="img/white-coffe.webp, img/white-coffe_2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/white-coffe-desktop.png, img/white-coffe-desktop_2x.png 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/white-coffe-tablet.png, img/white-coffe-tablet_2x.png 2x">
+                        <img class="cards__img" src="img/white-coffe.png"
+                        srcset="img/white-coffe.png_2x.png" width="130" height="188" alt="белая банка кофе">
+                    </picture>
                   </a>
-                  <div>
-                    <a href="">
-                      <h4>Декаф Флэт Уайт</h4>
+                  <div class="cards__description descriptions">
+                    <a class="descriptions__link" href="#">
+                      <h4 class="descriptions__title">Декаф Флэт Уайт</h4>
                     </a>
-                    <p> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="descriptions__text"> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   </div>
-                  <div>
-                    <span>225₽</span>
-                    <a class="button" href="">
-                      <span>В корзину</span>
+                  <div class="basket">
+                    <span class="basket__cost">225₽</span>
+                    <a class="button basket__button button--violet" href="#">
+                      В корзину
                     </a>
                   </div>
                 </div>
               </li>
 
-              <li>
-                <div>
-                  <a href="">
-                    <picture></picture>
+              <li class="cards__item">
+                <div class="cards__wrapper">
+                  <a class="cards__link" href="#">
+                    <!-- ИЗМЕНИ!!! -->
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="img/chicken1000-desktop.webp, img/chicken1000-desktop_2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/chicken1000-tablet.webp, img/chicken1000-tablet_2x.webp 2x">
+                      <source type="image/webp" srcset="img/chicken1000.webp, img/chicken1000_2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/chicken1000-desktop.png, img/chicken1000-desktop_2x.png 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/chicken1000-tablet.png, img/chicken1000-tablet_2x.png 2x"><img
+                        class="cards__img cards__img--chicken1000" src="img/chicken1000.png"
+                        srcset="img/chicken1000_2x.png" width="84" height="100" alt="курица 1000г">
+                    </picture>
                   </a>
-                  <div>
-                    <a href="">
-                      <h4>Декаф Флэт Уайт</h4>
+                  <div class="cards__description descriptions">
+                    <a class="descriptions__link" href="#">
+                      <h4 class="descriptions__title">Декаф Флэт Уайт</h4>
                     </a>
-                    <p> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="descriptions__text"> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   </div>
-                  <div>
-                    <span>225₽</span>
-                    <a class="button" href="">
-                      <span>В корзину</span>
+                  <div class="basket">
+                    <span class="basket__cost">225₽</span>
+                    <a class="button basket__button button--violet" href="#">
+                      В корзину
                     </a>
                   </div>
                 </div>
               </li>
 
-              <li>
-                <div>
-                  <a href="">
-                    <picture></picture>
+              <li class="cards__item">
+                <div class="cards__wrapper">
+                  <a class="cards__link" href="#">
+                    <!-- ИЗМЕНИ!!! -->
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="img/chicken1000-desktop.webp, img/chicken1000-desktop_2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/chicken1000-tablet.webp, img/chicken1000-tablet_2x.webp 2x">
+                      <source type="image/webp" srcset="img/chicken1000.webp, img/chicken1000_2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/chicken1000-desktop.png, img/chicken1000-desktop_2x.png 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/chicken1000-tablet.png, img/chicken1000-tablet_2x.png 2x"><img
+                        class="cards__img cards__img--chicken1000" src="img/chicken1000.png"
+                        srcset="img/chicken1000_2x.png" width="84" height="100" alt="курица 1000г">
+                    </picture>
                   </a>
-                  <div>
-                    <a href="">
-                      <h4>Декаф Флэт Уайт</h4>
+                  <div class="cards__description descriptions">
+                    <a class="descriptions__link" href="#">
+                      <h4 class="descriptions__title">Декаф Флэт Уайт</h4>
                     </a>
-                    <p> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="descriptions__text"> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   </div>
-                  <div>
-                    <span>225₽</span>
-                    <a class="button" href="">
-                      <span>В корзину</span>
+                  <div class="basket">
+                    <span class="basket__cost">225₽</span>
+                    <a class="button basket__button button--violet" href="#">
+                      В корзину
                     </a>
                   </div>
                 </div>
               </li>
 
-              <li>
-                <div>
-                  <a href="">
-                    <picture></picture>
+              <li class="cards__item">
+                <div class="cards__wrapper">
+                  <a class="cards__link" href="#">
+                    <!-- ИЗМЕНИ!!! -->
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="img/chicken1000-desktop.webp, img/chicken1000-desktop_2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/chicken1000-tablet.webp, img/chicken1000-tablet_2x.webp 2x">
+                      <source type="image/webp" srcset="img/chicken1000.webp, img/chicken1000_2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/chicken1000-desktop.png, img/chicken1000-desktop_2x.png 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/chicken1000-tablet.png, img/chicken1000-tablet_2x.png 2x"><img
+                        class="cards__img cards__img--chicken1000" src="img/chicken1000.png"
+                        srcset="img/chicken1000_2x.png" width="84" height="100" alt="курица 1000г">
+                    </picture>
                   </a>
-                  <div>
-                    <a href="">
-                      <h4>Декаф Флэт Уайт</h4>
+                  <div class="cards__description descriptions">
+                    <a class="descriptions__link" href="#">
+                      <h4 class="descriptions__title">Декаф Флэт Уайт</h4>
                     </a>
-                    <p> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="descriptions__text"> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   </div>
-                  <div>
-                    <span>225₽</span>
-                    <a class="button" href="">
-                      <span>В корзину</span>
+                  <div class="basket">
+                    <span class="basket__cost">225₽</span>
+                    <a class="button basket__button button--violet" href="#">
+                      В корзину
                     </a>
                   </div>
                 </div>
               </li>
 
-              <li>
-                <div>
-                  <a href="">
-                    <picture></picture>
+              <li class="cards__item">
+                <div class="cards__wrapper">
+                  <a class="cards__link" href="#">
+                    <!-- ИЗМЕНИ!!! -->
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="img/chicken1000-desktop.webp, img/chicken1000-desktop_2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/chicken1000-tablet.webp, img/chicken1000-tablet_2x.webp 2x">
+                      <source type="image/webp" srcset="img/chicken1000.webp, img/chicken1000_2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/chicken1000-desktop.png, img/chicken1000-desktop_2x.png 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/chicken1000-tablet.png, img/chicken1000-tablet_2x.png 2x"><img
+                        class="cards__img cards__img--chicken1000" src="img/chicken1000.png"
+                        srcset="img/chicken1000_2x.png" width="84" height="100" alt="курица 1000г">
+                    </picture>
                   </a>
-                  <div>
-                    <a href="">
-                      <h4>Декаф Флэт Уайт</h4>
+                  <div class="cards__description descriptions">
+                    <a class="descriptions__link" href="#">
+                      <h4 class="descriptions__title">Декаф Флэт Уайт</h4>
                     </a>
-                    <p> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <p class="descriptions__text"> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   </div>
-                  <div>
-                    <span>225₽</span>
-                    <a class="button" href="">
-                      <span>В корзину</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div>
-                  <a href="">
-                    <picture></picture>
-                  </a>
-                  <div>
-                    <a href="">
-                      <h4>Декаф Флэт Уайт</h4>
-                    </a>
-                    <p> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                  </div>
-                  <div>
-                    <span>225₽</span>
-                    <a class="button" href="">
-                      <span>В корзину</span>
+                  <div class="basket">
+                    <span class="basket__cost">225₽</span>
+                    <a class="button basket__button button--violet" href="#">
+                      В корзину
                     </a>
                   </div>
                 </div>
               </li>
             </ul>
-            <div>
-              <ul>
-                <li>
-                  <a href="">
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">
                     < </a>
                 </li>
-                <li>
-                  <a href="">1</a>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">1</a>
                 </li>
-                <li>
-                  <a href="">2</a>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">2</a>
                 </li>
-                <li>
-                  <a href="">3</a>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
                 </li>
-                <li>
-                  <a href="">></a>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">></a>
                 </li>
               </ul>
             </div>
@@ -370,72 +438,74 @@
         </section>
       </div>
 
-      <div>
-        <iframe
+      <div class="map">
+        <h2 class="visually-hidden">карта</h2>
+        <iframe class="map__wrapper"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705.9814886298293!2d30.31701386995179!3d59.96835582580835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2s!4v1686694008029!5m2!1sru!2s"
           width="1440" height="540" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </main>
 
-    <footer>
+    <footer class="main-footer">
       <div class="container">
         <h2 class="visually-hidden">Соцсети</h2>
-        <div class="social">
-          <ul>
-            <li>
-              <a href="">vk</a>
+        <div class="main-footer__social">
+          <ul class="social-list social">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy" aria-label="мы вконтакте">vk</a>
             </li>
-            <li>
-              <a href="">Pinterest</a>
+            <li class="social__item">
+              <a class="social__link"
+                href="https://www.pinterest.com/pin/html-academy--342695852890631631/" aria-label="мы в пинтерест">Pinterest</a>
             </li>
-            <li>
-              <a href="">Ok</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>интернет магазин</h3>
-          <ul>
-            <li>
-              <a href="">каталог</a>
-            </li>
-            <li>
-              <a href="">доставка</a>
-            </li>
-            <li>
-              <a href="">способы оплаты</a>
-            </li>
-            <li>
-              <a href="">о нас</a>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="мы в однокласниках">Ok</a>
             </li>
           </ul>
         </div>
-
-        <div>
-          <h3>медиа</h3>
-          <ul>
-            <li>
-              <a href="">блог</a>
+        <div class="main-footer__ithernet shop">
+          <h3 class="shop__title violet-title">интернет магазин</h3>
+          <ul class="shop__list">
+            <li class="shop__item">
+              <a class="shop__link" href="#">каталог</a>
             </li>
-            <li>
-              <a href="">информация для сми</a>
+            <li class="shop__item">
+              <a class="shop__link" href="#">доставка</a>
             </li>
-            <li>
-              <a href="">правовая информация</a>
+            <li class="shop__item">
+              <a class="shop__link" href="#">способы оплаты</a>
+            </li>
+            <li class="shop__item">
+              <a class="shop__link" href="#">о нас</a>
             </li>
           </ul>
         </div>
 
-        <div>
-          <h3>Контакты</h3>
-          <span>Санкт-Петербург, набережная реки Карповки, дом 5</span>
-          <a class="contact_tel" href="tel:+79788182001">+7 978 818-20-01</a>
+        <div class="media">
+          <h3 class="media__title violet-title">медиа</h3>
+          <ul class="media__list">
+            <li class="media__item">
+              <a class="media__link" href="#">блог</a>
+            </li>
+            <li class="media__item">
+              <a class="media__link" href="#">информация для сми</a>
+            </li>
+            <li class="media__item">
+              <a class="media__link" href="#">правовая информация</a>
+            </li>
+          </ul>
         </div>
 
-        <div>
-          <span>Разработано в</span>
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="contacts">
+          <h3 class="contacts__title violet-title">Контакты</h3>
+          <span class="contacts__description">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+          <a class="contacts__tel" href="tel:+79788182001">+7 978 818-20-01</a>
+        </div>
+
+        <div class="academy">
+          <span class="academy__text">Разработано в</span>
+          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
 
       </div>
