@@ -7,18 +7,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="fonts/montserrat/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <div class="page-container">
-    <header class="main-header main-header--closed">
+    <header class="main-header main-header--closed main-header--nojs">
       <div class="container">
         <div class="main-header__wrapper">
           <div class="main-header__container">
             <a class="main-header__logo" href="index.html">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/icons/logo-desktop.svg">
+                <source media="(min-width: 1220px)" srcset="img/icons/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg">
                 <img class="main-header__logo-image" src="img/logo-mobile.svg" width="32" height="36" alt="DrinkGo">
               </picture>
@@ -35,12 +36,9 @@
               </svg>
               <span class="visually-hidden">Корзина</span>
             </a>
-            <a class="main-header__toggle" href="#">
-              <svg width="16" height="16">
-                <use xlink:href="img/icons/stack.svg#menu"></use>
-              </svg>
+            <button class="main-header__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
-            </a>
+              </a>
           </div>
           <nav class="main-header__nav main-nav">
             <div class="main-nav__wrapper">
@@ -74,10 +72,12 @@
                   srcset="img/slider-image-desktop.webp 1x, img/slider-image-desktop_2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/slider-image-tablet.webp 1x, img/slider-image-tablet_2x.webp 2x">
-                 <source type="image/webp" srcset="img/slider-image.webp 1x, img/slider-image_2x.webp 2x">
+                <source type="image/webp" srcset="img/slider-image.webp 1x, img/slider-image_2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/slider-image-desktop.png 1x, img/slider-image-desktop_2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/slider-image-tablet.png 1x, img/slider-image-tablet_2x.png 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/slider-image-desktop.png 1x, img/slider-image-desktop_2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/slider-image-tablet.png 1x, img/slider-image-tablet_2x.png 2x">
                 <img class="advertising__image" src="img/slider-image.png" width="280" height="280"
                   srcset="img/slider-image_2x.png" alt="главное изображение">
               </picture>
@@ -158,28 +158,32 @@
                 <ul class="milk__list">
                   <li class="milk__item">
                     <label class="milk__description" for="no">
-                      <input class="milk__button visually-hidden" type="radio" id="no" name="nomatter" value="неважно" checked="">
+                      <input class="milk__button visually-hidden" type="radio" id="no" name="nomatter" value="неважно"
+                        checked="">
                       <span class="milk__round"></span>
                       неважно
                     </label>
                   </li>
                   <li class="milk__item">
                     <label class="milk__description" for="animal">
-                      <input class="milk__button visually-hidden" type="radio" id="animal" name="animals" value="только животное">
+                      <input class="milk__button visually-hidden" type="radio" id="animal" name="animals"
+                        value="только животное">
                       <span class="milk__round"></span>
                       только животное
                     </label>
                   </li>
                   <li class="milk__item">
                     <label class="milk__description" for="tree">
-                      <input class="milk__button visually-hidden" type="radio" id="tree" name="trees" value="только растительное">
+                      <input class="milk__button visually-hidden" type="radio" id="tree" name="trees"
+                        value="только растительное">
                       <span class="milk__round"></span>
                       только растительное
                     </label>
                   </li>
                   <li class="milk__item">
                     <label class="milk__description" for="reset">
-                      <input class="milk__button visually-hidden" type="radio" id="reset" name="without" value="без молока">
+                      <input class="milk__button visually-hidden" type="radio" id="reset" name="without"
+                        value="без молока">
                       <span class="milk__round"></span>
                       без молока
                     </label>
@@ -228,9 +232,8 @@
                 </ul>
                 <fieldset class="submit">
                   <legend class="submit__description"></legend>
-                  <button class="submit__button button--ok" type="submit"
-                    value="Применить">Применить</button>
-                  <button class="submit__button submit__button--reset" type="reset" >Сбросить</button>
+                  <button class="submit__button button--ok" type="submit" value="Применить">Применить</button>
+                  <button class="submit__button submit__button--reset" type="reset">Сбросить</button>
                 </fieldset>
               </fieldset>
             </form>
@@ -263,8 +266,8 @@
                         srcset="img/white-coffe-desktop.png, img/white-coffe-desktop_2x.png 2x">
                       <source media="(min-width: 768px)"
                         srcset="img/white-coffe-tablet.png, img/white-coffe-tablet_2x.png 2x">
-                        <img class="cards__img" src="img/white-coffe.png"
-                        srcset="img/white-coffe.png_2x.png" width="130" height="188" alt="белая банка кофе">
+                      <img class="cards__img" src="img/white-coffe.png" srcset="img/white-coffe.png_2x.png" width="130"
+                        height="188" alt="белая банка кофе">
                     </picture>
                   </a>
                   <div class="cards__description descriptions">
@@ -276,6 +279,9 @@
                   <div class="basket">
                     <span class="basket__cost">225₽</span>
                     <a class="button basket__button button--violet" href="#">
+                      <svg width="20" height="16">
+                        <use xlink:href="img/icons/stack.svg#shop"></use>
+                      </svg>
                       В корзину
                     </a>
                   </div>
@@ -288,16 +294,16 @@
                     <!-- ИЗМЕНИ!!! -->
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/chicken1000-desktop.webp, img/chicken1000-desktop_2x.webp 2x">
+                        srcset="img/coffee-can-2-desktop.webp, img/coffee-can-2-desktop_2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/chicken1000-tablet.webp, img/chicken1000-tablet_2x.webp 2x">
-                      <source type="image/webp" srcset="img/chicken1000.webp, img/chicken1000_2x.webp 2x">
+                        srcset="img/coffee-can-2-tablet.webp, img/coffee-can-2-tablet_2x.webp 2x">
+                      <source type="image/webp" srcset="img/coffee-can-2.webp, img/coffee-can-2@2x.webp 2x">
                       <source media="(min-width: 1200px)"
-                        srcset="img/chicken1000-desktop.png, img/chicken1000-desktop_2x.png 2x">
+                        srcset="img/coffee-can-2-desktop.png, img/coffee-can-2-desktop_2x.png 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/chicken1000-tablet.png, img/chicken1000-tablet_2x.png 2x"><img
-                        class="cards__img cards__img--chicken1000" src="img/chicken1000.png"
-                        srcset="img/chicken1000_2x.png" width="84" height="100" alt="курица 1000г">
+                        srcset="img/coffee-can-2-tablet.png, img/coffee-can-2-tablet_2x.png 2x"><img class="cards__img"
+                        src="img/coffee-can-2.png" srcset="img/coffee-can-2@2x.png" width="130" height="188"
+                        alt="фиолетовое кофе">
                     </picture>
                   </a>
                   <div class="cards__description descriptions">
@@ -309,6 +315,44 @@
                   <div class="basket">
                     <span class="basket__cost">225₽</span>
                     <a class="button basket__button button--violet" href="#">
+                      <svg width="20" height="16">
+                        <use xlink:href="img/icons/stack.svg#shop"></use>
+                      </svg>
+                      В корзину
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards__item">
+                <div class="cards__wrapper">
+                  <a class="cards__link" href="#">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="img/coffee-can-3-desktop.webp, img/coffee-can-3-desktop_2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/coffee-can-3-tablet.webp, img/coffee-can-3-tablet_2x.webp 2x">
+                      <source type="image/webp" srcset="img/coffee-can-3.webp, img/coffee-can-3@2x.webp 2x">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/coffee-can-3-desktop.png, img/coffee-can-3-desktop_2x.png 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/coffee-can-3-tablet.png, img/coffee-can-3-tablet_2x.png 2x"><img
+                        class="cards__img cards__img--chicken1000" src="img/coffee-can-3.png"
+                        srcset="img/coffee-can-3@2x.png" width="130" height="188" alt="черный кофе">
+                    </picture>
+                  </a>
+                  <div class="cards__description descriptions">
+                    <a class="descriptions__link" href="#">
+                      <h4 class="descriptions__title">Декаф Флэт Уайт</h4>
+                    </a>
+                    <p class="descriptions__text"> Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  </div>
+                  <div class="basket">
+                    <span class="basket__cost">225₽</span>
+                    <a class="button basket__button button--violet" href="#">
+                      <svg width="20" height="16">
+                        <use xlink:href="img/icons/stack.svg#shop"></use>
+                      </svg>
                       В корзину
                     </a>
                   </div>
@@ -321,16 +365,16 @@
                     <!-- ИЗМЕНИ!!! -->
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/chicken1000-desktop.webp, img/chicken1000-desktop_2x.webp 2x">
+                        srcset="img/coffee-can-4-desktop.webp, img/coffee-can-4-desktop_2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/chicken1000-tablet.webp, img/chicken1000-tablet_2x.webp 2x">
-                      <source type="image/webp" srcset="img/chicken1000.webp, img/chicken1000_2x.webp 2x">
+                        srcset="img/coffee-can-4-tablet.webp, img/coffee-can-4-tablet_2x.webp 2x">
+                      <source type="image/webp" srcset="img/coffee-can-4.webp, img/coffee-can-4@2x.webp 2x">
                       <source media="(min-width: 1200px)"
-                        srcset="img/chicken1000-desktop.png, img/chicken1000-desktop_2x.png 2x">
+                        srcset="img/coffee-can-4-desktop.png, img/coffee-can-4-desktop_2x.png 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/chicken1000-tablet.png, img/chicken1000-tablet_2x.png 2x"><img
-                        class="cards__img cards__img--chicken1000" src="img/chicken1000.png"
-                        srcset="img/chicken1000_2x.png" width="84" height="100" alt="курица 1000г">
+                        srcset="img/coffee-can-4-tablet.png, img/coffee-can-4-tablet_2x.png 2x"><img class="cards__img "
+                        src="img/coffee-can-4.png" srcset="img/coffee-can-4@2x.png" width="130" height="188"
+                        alt="розовый кофе">
                     </picture>
                   </a>
                   <div class="cards__description descriptions">
@@ -342,6 +386,9 @@
                   <div class="basket">
                     <span class="basket__cost">225₽</span>
                     <a class="button basket__button button--violet" href="#">
+                      <svg width="20" height="16">
+                        <use xlink:href="img/icons/stack.svg#shop"></use>
+                      </svg>
                       В корзину
                     </a>
                   </div>
@@ -354,16 +401,16 @@
                     <!-- ИЗМЕНИ!!! -->
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/chicken1000-desktop.webp, img/chicken1000-desktop_2x.webp 2x">
+                        srcset="img/coffee-can-5-desktop.webp, img/coffee-can-5-desktop_2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/chicken1000-tablet.webp, img/chicken1000-tablet_2x.webp 2x">
-                      <source type="image/webp" srcset="img/chicken1000.webp, img/chicken1000_2x.webp 2x">
+                        srcset="img/coffee-can-5-tablet.webp, img/coffee-can-5-tablet_2x.webp 2x">
+                      <source type="image/webp" srcset="img/coffee-can-5.webp, img/coffee-can-5@2x.webp 2x">
                       <source media="(min-width: 1200px)"
-                        srcset="img/chicken1000-desktop.png, img/chicken1000-desktop_2x.png 2x">
+                        srcset="img/coffee-can-5-desktop.png, img/coffee-can-5-desktop_2x.png 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/chicken1000-tablet.png, img/chicken1000-tablet_2x.png 2x"><img
-                        class="cards__img cards__img--chicken1000" src="img/chicken1000.png"
-                        srcset="img/chicken1000_2x.png" width="84" height="100" alt="курица 1000г">
+                        srcset="img/coffee-can-5-tablet.png, img/coffee-can-5-tablet_2x.png 2x"><img class="cards__img "
+                        src="img/coffee-can-5.png" srcset="img/coffee-can-3@2x.png" width="130" height="188"
+                        alt="коричневый кофе">
                     </picture>
                   </a>
                   <div class="cards__description descriptions">
@@ -375,6 +422,9 @@
                   <div class="basket">
                     <span class="basket__cost">225₽</span>
                     <a class="button basket__button button--violet" href="#">
+                      <svg width="20" height="16">
+                        <use xlink:href="img/icons/stack.svg#shop"></use>
+                      </svg>
                       В корзину
                     </a>
                   </div>
@@ -387,16 +437,16 @@
                     <!-- ИЗМЕНИ!!! -->
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/chicken1000-desktop.webp, img/chicken1000-desktop_2x.webp 2x">
+                        srcset="img/coffee-can-6-desktop.webp, img/coffee-can-6-desktop_2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/chicken1000-tablet.webp, img/chicken1000-tablet_2x.webp 2x">
-                      <source type="image/webp" srcset="img/chicken1000.webp, img/chicken1000_2x.webp 2x">
+                        srcset="img/coffee-can-6-tablet.webp, img/coffee-can-6-tablet_2x.webp 2x">
+                      <source type="image/webp" srcset="img/coffee-can-6.webp, img/coffee-can-6@2x.webp 2x">
                       <source media="(min-width: 1200px)"
-                        srcset="img/chicken1000-desktop.png, img/chicken1000-desktop_2x.png 2x">
+                        srcset="img/coffee-can-6-desktop.png, img/coffee-can-6-desktop_2x.png 2x">
                       <source media="(min-width: 768px)"
-                        srcset="img/chicken1000-tablet.png, img/chicken1000-tablet_2x.png 2x"><img
-                        class="cards__img cards__img--chicken1000" src="img/chicken1000.png"
-                        srcset="img/chicken1000_2x.png" width="84" height="100" alt="курица 1000г">
+                        srcset="img/coffee-can-6-tablet.png, img/coffee-can-6-tablet_2x.png 2x"><img class="cards__img "
+                        src="img/coffee-can-6.png" srcset="img/coffee-can-3@2x.png" width="130" height="188"
+                        alt="желтый кофе">
                     </picture>
                   </a>
                   <div class="cards__description descriptions">
@@ -408,6 +458,9 @@
                   <div class="basket">
                     <span class="basket__cost">225₽</span>
                     <a class="button basket__button button--violet" href="#">
+                      <svg width="20" height="16">
+                        <use xlink:href="img/icons/stack.svg#shop"></use>
+                      </svg>
                       В корзину
                     </a>
                   </div>
@@ -453,14 +506,25 @@
         <div class="main-footer__social">
           <ul class="social-list social">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy" aria-label="мы вконтакте">vk</a>
+              <a class="social__link" href="https://vk.com/htmlacademy" aria-label="мы вконтакте">
+                <svg width="20" height="20">
+                  <use xlink:href="img/icons/stack.svg#vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link"
-                href="https://www.pinterest.com/pin/html-academy--342695852890631631/" aria-label="мы в пинтерест">Pinterest</a>
+              <a class="social__link" href="https://www.pinterest.com/pin/html-academy--342695852890631631/"
+                aria-label="мы в пинтерест">
+                <svg width="22" height="22">
+                  <use xlink:href="img/icons/stack.svg#pinterest"></use>
+                </svg></a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#" aria-label="мы в однокласниках">Ok</a>
+              <a class="social__link" href="#" aria-label="мы в однокласниках">
+                <svg width="20" height="20">
+                  <use xlink:href="img/icons/stack.svg#ok"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -512,7 +576,7 @@
     </footer>
 
   </div>
-  <script src="./js/script.js" defer></script>
+  <script src="/js/script.js" defer></script>
 </body>
 
 </html>

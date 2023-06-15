@@ -1,0 +1,18 @@
+.site-list__link {
+  font-family: $main-font;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #333333;
+  width: 63px;
+  letter-spacing: 0.02em;
+}
+
+.site-list__item {
+  text-align: center;
+  padding: 22px 0 24px;
+  border-top: 1px solid #F0EBFF;
+}
