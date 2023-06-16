@@ -1,7 +1,6 @@
 .shop {
   padding: 20px 0;
   border: 0;
-  border-top: 1px solid #F0EBFF;
   border-bottom: 1px solid #F0EBFF;
 }
 
@@ -18,6 +17,7 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.02em;
+  text-transform: none;
 }
 
 .shop__item {

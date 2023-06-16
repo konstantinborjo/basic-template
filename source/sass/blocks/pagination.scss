@@ -16,7 +16,7 @@
   height: 40px;
 }
 
-.pagination__link{
+.pagination__link {
   width: 40px;
   height: 40px;
   background: #ffffff;
@@ -31,4 +31,11 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+
+.pagination__link--checked {
+  font-weight: 600;
+  text-align: center;
+  color: #333333;
+  background: none;
 }
