@@ -1,6 +1,46 @@
-.range{
+.range {
   position: relative;
-    height: 4px;
-    background-color: #9070EC;
-    width: 280px;
+  height: 4px;
+  background-color: #E2E2E2;
+  width: 280px;
+  margin-top: 30px;
+}
+
+.range__bar {
+  position: absolute;
+  height: 4px;
+  background-color: #9070EC;
+  width: 228px;
+}
+
+.range__toggle {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 2px solid #9070EC;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.range__toggle--min {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.range__toggle--max {
+  position: absolute;
+  top: -10px;
+  left: 207px;
+}
+
+.range__input{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 8px 10px;
+background: #FFFFFF;
+border: 2px solid #9070EC;
+border-radius: 4px;
 }

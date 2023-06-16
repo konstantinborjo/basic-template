@@ -135,18 +135,22 @@
           <fieldset class="value">
             <legend class="value__title grey">Цена</legend>
             <div class="value__line range">
-              <button class="range__toggle range__toggle--min">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range__toggle range__toggle--max">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
-              <div class="range__bar"></div>
+              <div class="range__bar">
+                <button class="range__toggle range__toggle--min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range__toggle range__toggle--max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
             </div>
             <div class="value__form input">
               <label class="input__description" for="minimum">
                 <input class="input__field zero" type="number" min="0" max="123" placeholder="0" id="minimum">
               </label>
+              <svg width="8" height="2">
+                <use xlink:href="img/icons/stack.svg#line"></use>
+              </svg>
               <label class="input__description" for="maximum">
                 <input class="input__field" type="number" min="0" max="123" id="maximum" placeholder="123" value="123">
               </label>
@@ -511,8 +515,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/icons/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg">
-          <img class="main-footer__logo-image"
-            src="img/logoDrink2Go.svg" width="82" height="36" alt="Лого дог">
+          <img class="main-footer__logo-image" src="img/logoDrink2Go.svg" width="82" height="36" alt="Лого дог">
         </picture>
         <ul class="social-list social">
           <li class="social__item">
@@ -579,7 +582,9 @@
 
       <div class="academy">
         <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано в HTML Academy
-          <svg width="12" height="16"><use xlink:href="img/icons/stack.svg#academy"></use></svg>
+          <svg width="12" height="16">
+            <use xlink:href="img/icons/stack.svg#academy"></use>
+          </svg>
         </a>
       </div>
 
