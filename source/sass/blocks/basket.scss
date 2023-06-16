@@ -1,0 +1,22 @@
+.basket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.basket__button {
+  width: 118px;
+  padding: 8px 19px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket__cost {
+  width: 51px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+}

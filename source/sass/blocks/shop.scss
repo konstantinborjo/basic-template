@@ -1,0 +1,38 @@
+.shop {
+  padding: 20px 0;
+  border: 0;
+  border-top: 1px solid #F0EBFF;
+  border-bottom: 1px solid #F0EBFF;
+}
+
+.shop__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shop__title {
+  width: 146px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+.shop__item {
+  margin-top: 12px;
+  width: 132px;
+}
+
+.shop__link {
+  text-decoration: none;
+  width: 132px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #333333;
+}

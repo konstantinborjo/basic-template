@@ -1,7 +1,37 @@
-.sorting{
+.sorting {
   background: #f8f8f8;
 }
 
-.sorting__wrapper{
+.sorting__wrapper {
   margin-top: 20px;
 }
+
+.sorting__wrapper {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting__title {
+  width: 107px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.sorting__field {
+  border: none;
+  background: none;
+  width: 165px;
+  padding: 4px 10px;
+  color: #7859CF;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  }
