@@ -8,3 +8,16 @@
   position: absolute;
   z-index: 1;
 }
+
+
+@media (min-width: $tablet-width) {
+.main-nav{
+  position: absolute;
+  top: 8px;
+  left: 165px;
+}
+.main-nav__list{
+  width: 400px;
+}
+
+}

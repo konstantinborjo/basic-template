@@ -16,3 +16,34 @@
   padding: 22px 0 24px;
   border-top: 1px solid #F0EBFF;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #333333;
+  }
+
+  .site-list__item{
+    border: none;
+  }
+
+  .site-list__link--line{
+    color: #7859CF;
+    position: relative;
+  }
+
+  .site-list__link--line::before{
+    position: absolute;
+    left: -18px;
+    content: "";
+    height: 2px;
+    width: 103px;
+    bottom: -40px;
+    background-color: #7859cf;
+  }
+}

@@ -27,12 +27,13 @@
 
 .media__link {
   text-decoration: none;
-  width: 179px;
+  width: 180px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
   text-transform: uppercase;
-  color: #333333;
+  color: #333;
+  display: flex;
 }
