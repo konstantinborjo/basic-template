@@ -1,6 +1,9 @@
 .header-image {
   position: relative;
   min-height: 656px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .header-image::after {
@@ -13,4 +16,29 @@
   width: 100%;
   background-color: #F3EBE1;
   z-index: -1;
+}
+
+.header-image__wrapper {
+  text-align: center;
+}
+
+.header-image__name {
+  width: 280px;
+  font-size: 36px;
+  line-height: 48px;
+  color: #333333;
+  letter-spacing: 0.02em;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.header-image__description {
+  width: 280px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #333333;
 }

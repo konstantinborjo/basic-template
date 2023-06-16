@@ -1,0 +1,26 @@
+.catalog{
+  background-color: #F8F8F8;
+  padding-top: 50px;
+}
+
+.catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.catalog__title {
+  margin: 0 auto;
+  width: 65px;
+}
+
+.catalog__drink {
+  width: 280px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+}

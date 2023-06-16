@@ -1,0 +1,25 @@
+.country {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.country__title {
+  width: 202px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  padding: 0;
+}
+
+.country__list{
+  list-style: none;
+  padding: 0;
+
+}
+
+.country__item{
+  margin-bottom: 20px;
+}

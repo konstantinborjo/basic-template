@@ -1,0 +1,37 @@
+.price {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-family: $main-font;
+  font-style: normal;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.price__new {
+  width: 100px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.price__old {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration-line: line-through;
+  color: #7859CF;
+}
+
+.price__button {
+  width: 73px;
+  padding: 8px 20px;
+}
