@@ -18,3 +18,14 @@
   background: #ffffff;
   color: #7859cf;
 }
+
+@media (min-width: $tablet-width) {
+  .submit__button{
+    width: 140px;
+  }
+
+  .submit{
+    margin: 87px 206px 0;
+    flex-direction: row;
+  }
+}

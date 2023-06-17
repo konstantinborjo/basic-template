@@ -35,3 +35,11 @@
   line-height: 24px;
   text-align: right;
   }
+
+
+  @media (min-width: $tablet-width) {
+    .sorting__wrapper{
+      margin-top: 44px;
+      justify-content: flex-end;
+    }
+  }

@@ -3,7 +3,7 @@
   height: 4px;
   background-color: #E2E2E2;
   width: 280px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .range__bar {
@@ -32,4 +32,14 @@
   position: absolute;
   top: -10px;
   left: 207px;
+}
+
+@media (min-width: $tablet-width) {
+  .range__bar{
+    width: 192px;
+  }
+
+  .range{
+    width: 223px;
+  }
 }

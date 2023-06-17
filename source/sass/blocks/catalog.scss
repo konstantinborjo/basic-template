@@ -32,11 +32,13 @@
     line-height: 64px;
   }
 
-  .catalog__form{
+  .catalog__form {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 223px 222px 223px;
+    grid-template-rows: 227px;
     list-style-type: none;
     margin: 0;
-   grid-column-gap: 30px;
+    grid-column-gap: 30px;
+    justify-content: flex-start;
   }
 }

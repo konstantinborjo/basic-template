@@ -10,3 +10,9 @@
   width: 98px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .input__field{
+    width: 60px;
+  }
+}
