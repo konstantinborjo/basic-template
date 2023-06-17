@@ -18,8 +18,21 @@
   color: #333333;
 }
 
-.advantages__list{
+.advantages__list {
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    margin-top: 150px;
+  }
+
+  .advantages__causes {
+    width: 728px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 64px;
+  }
 }

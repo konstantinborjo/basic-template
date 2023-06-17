@@ -41,6 +41,20 @@
 @media (min-width: $tablet-width) {
   .header-image__container {
     padding-top: 60px;
+  }
 
+  .header-image__name {
+    width: 608px;
+    font-size: 56px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+  }
+
+  .header-image__description {
+    width: 608px;
+    font-size: 20px;
+    line-height: 32px;
   }
 }

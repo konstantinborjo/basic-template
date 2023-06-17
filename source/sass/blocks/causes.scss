@@ -80,3 +80,50 @@
   height: 56px;
   align-self: center;
 }
+
+@media (min-width: $tablet-width) {
+  .causes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    grid-row-gap: 50px;
+    grid-column-gap: 30px;
+  }
+
+  .causes__item {
+    padding-left: 72px;
+    min-height: 118px;
+    gap: 10px;
+  }
+
+  .causes__title {
+    text-align: left;
+  }
+
+  .causes__description {
+    text-align: left;
+    width: 225px;
+  }
+
+  .causes__item--speed::before {
+    top: 36px;
+    left: 10px;
+  }
+
+  .causes__item--comfort::before{
+    top: 33px;
+    right: 293px;
+  }
+
+  .causes__item--energy::before{
+    top: 14px;
+    right: 292px;
+  }
+
+  .causes__item--ecology::before{
+    top: 14px;
+    right: 292px;
+  }
+}
