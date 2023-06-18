@@ -42,3 +42,17 @@
     justify-content: flex-start;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__drink{
+    width: 1360px;
+    margin: 0 auto;
+  }
+
+  .catalog__form{
+    width: 318px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+

@@ -61,8 +61,9 @@
   }
 
   .pagination__link--next {
+    width: 91px;
     display: flex;
-    width: 104px;
+    justify-content: center;
   }
 
   .pagination__item--next {
@@ -70,8 +71,9 @@
   }
 
   .pagination__link--back{
-    width: 104px;
+    width: 91px;
     display: flex;
+    justify-content: center;
   }
 
   .pagination__item--back{
@@ -81,5 +83,11 @@
   .pagination__list{
     width: 408px;
     margin: 20px 0 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination{
+    width: 1011px;
   }
 }

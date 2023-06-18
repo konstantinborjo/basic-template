@@ -39,3 +39,26 @@
     margin: 20px 76px
   }
 }
+
+@media (min-width: $desktop-width) {
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    width: 1011px;
+    margin: 0;
+    margin-top: 26px;
+    background: none;
+  }
+
+  .cards__item{
+    width: 317px;
+  }
+
+  .hz{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

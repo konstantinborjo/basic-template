@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.main-header__text {
+  display: none;
+}
+
 .main-header__test {
   width: 128px;
   justify-content: space-between;
@@ -93,6 +97,10 @@
   display: block;
 }
 
+.main-header__menu {
+  display: none;
+}
+
 .main-header__text {
   display: none;
 }
@@ -138,21 +146,58 @@
 @media (min-width: $desktop-width) {
   .main-header__text {
     display: flex;
-    width: 126px;
+    width: 173px;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     color: #333333;
     margin-left: 20px;
+
   }
 
-  .main-header__logo{
+  .main-header__logo {
     width: 316px;
     display: flex;
+    text-decoration: none;
   }
 
-  .main-header__container{
+  .main-header__container {
     width: 1360px;
+  }
+
+  .main-header__logo-image {
+    width: 170px;
+    height: 36px;
+  }
+
+  .main-header__menu {
+    display: flex;
+    width: 65px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #333333;
+  }
+
+  .main-header__login {
+    width: 112px;
+
+    display: flex;
+    gap: 8px;
+  }
+
+  .main-header__test {
+    width: 290px;
+  }
+
+  .main-header__basket{
+    width: 90px;
+    display: flex;
+    gap: 8px;
+    margin-left: 20px;
   }
 }

@@ -29,3 +29,11 @@
     flex-direction: row;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .submit{
+    margin: 0;
+    margin-top: 40px;
+    justify-content: flex-start;
+  }
+}

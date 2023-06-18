@@ -11,13 +11,19 @@
 
 
 @media (min-width: $tablet-width) {
-.main-nav{
-  position: absolute;
-  top: 8px;
-  left: 165px;
-}
-.main-nav__list{
-  width: 400px;
+  .main-nav {
+    position: absolute;
+    top: 8px;
+    left: 165px;
+  }
+
+  .main-nav__list {
+    width: 400px;
+  }
 }
 
+@media (min-width: $desktop-width) {
+  .main-nav{
+    left: 520px;
+  }
 }

@@ -15,3 +15,13 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .main-picture__pic {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    bottom: 80px;
+    left: 135px;
+  }
+}

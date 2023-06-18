@@ -18,7 +18,6 @@
   text-align: center;
   color: #333333;
   text-decoration: none;
-  cursor: pointer;
   margin: 0;
 }
 
@@ -112,18 +111,60 @@
     left: 10px;
   }
 
-  .causes__item--comfort::before{
+  .causes__item--comfort::before {
     top: 33px;
     right: 293px;
   }
 
-  .causes__item--energy::before{
+  .causes__item--energy::before {
     top: 14px;
     right: 292px;
   }
 
-  .causes__item--ecology::before{
+  .causes__item--ecology::before {
     top: 14px;
     right: 292px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .causes {
+    width: 1360px;
+    grid-template-columns: 318px 317px 318px 317px;
+    grid-column-gap: 30px;
+    padding: 0;
+  }
+
+  .causes__item {
+    width: 317px;
+    padding: 0;
+    padding-top: 72px;
+  }
+
+  .causes__title {
+    text-align: center;
+  }
+
+  .causes__description {
+    text-align: center;
+    width: 317px;
+  }
+
+  .causes__item--speed::before {
+    left: 115px;
+  }
+
+  .causes__item--comfort::before {
+    left: 115px;
+  }
+
+  .causes__item--energy::before {
+    left: 115px;
+    top: 32px;
+  }
+
+  .causes__item--ecology::before {
+    left: 115px;
+    top: 32px;
   }
 }

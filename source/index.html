@@ -30,13 +30,13 @@
                 <svg width="16" height="16">
                   <use xlink:href="img/icons/stack.svg#login"></use>
                 </svg>
-                <span class="visually-hidden">войти</span>
+                <span class="main-header__menu">войти</span>
               </a>
               <a class="main-header__basket" href="#">
                 <svg width="16" height="16">
                   <use xlink:href="img/icons/stack.svg#basket"></use>
                 </svg>
-                <span class="visually-hidden">Корзина</span>
+                <span class="main-header__menu">Корзина</span>
               </a>
               <button class="main-header__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
@@ -262,7 +262,6 @@
         </div>
       </section>
 
-
       <section class="sorting">
         <div class="container">
           <div class="sorting__wrapper">
@@ -280,7 +279,7 @@
                 <a class="cards__link" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 1200px)"
-                      srcset="img/white-coffe.webp, img/white-coffe@2x.webp 2x">
+                      srcset="img/white-coffe.webp, img/white-coffe_2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/white-coffe.webp, img/white-coffe_2x.webp 2x">
                     <source type="image/webp" srcset="img/white-coffe.webp, img/white-coffe_2x.webp 2x">
@@ -478,11 +477,12 @@
           <div class="pagination">
             <ul class="pagination__list">
               <li class="pagination__item pagination__item--back">
-                <a class="pagination__link " href="#"><span class="pagination__link--icon">&lt;</span>
-                  <span class="pagination__link--back">&gt;</span>
+                <a class="pagination__link pagination__link--back " href="#"><span
+                    class="pagination__link--icon">&lt;</span>
+                  <span class="pagination__link--back">Назад</span>
                 </a>
               </li>
-              <li class="pagination__item pagination__item--back">
+              <li class="pagination__item ">
                 <a class="pagination__link" href="#">1</a>
               </li>
               <li class="pagination__item">
@@ -492,8 +492,9 @@
                 <a class="pagination__link" href="#">3</a>
               </li>
               <li class="pagination__item pagination__item--next">
-                <a class="pagination__link pagination__link--icon" href="#">></a>
-                <a class="pagination__link pagination__link--next" href="#">Вперёд</a>
+                <a class="pagination__link pagination__link--next" href="#"><span
+                    class="pagination__link--icon">&gt;</span>
+                  <span class="pagination__link--next">Вперёд</span></a>
               </li>
             </ul>
           </div>
