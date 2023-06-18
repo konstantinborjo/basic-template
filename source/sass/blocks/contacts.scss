@@ -50,5 +50,13 @@
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-display: flex;
+  display: flex;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__description {
+    width: 265px;
+  }
+
+
 }

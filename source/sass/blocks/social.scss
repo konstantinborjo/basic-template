@@ -8,3 +8,10 @@
   padding: 10px;
   color: #bdbdbd;
 }
+
+@media (min-width: $desktop-width) {
+  .social{
+    padding: 0;
+    width: 318px;
+  }
+}

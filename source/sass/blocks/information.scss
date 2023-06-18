@@ -5,3 +5,10 @@
     grid-column-gap: 30px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .information {
+    grid-template-columns: 318px 318px 318px;
+    margin-top: 10px;
+  }
+}

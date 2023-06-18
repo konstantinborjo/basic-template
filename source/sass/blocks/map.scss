@@ -9,3 +9,10 @@
     height: 480px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .map__wrapper {
+    width: 1440px;
+    height: 540px;
+  }
+}
