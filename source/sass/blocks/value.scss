@@ -26,3 +26,9 @@
     margin-top: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .value__title{
+    opacity: 1;
+  }
+}

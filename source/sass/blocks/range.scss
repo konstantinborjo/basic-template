@@ -35,11 +35,26 @@
 }
 
 @media (min-width: $tablet-width) {
-  .range__bar{
+  .range__bar {
     width: 192px;
   }
 
-  .range{
+  .range {
     width: 223px;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .range__bar {
+    width: 274px;
+  }
+
+  .range {
+    width: 318px;
+  }
+
+  .range__toggle--max {
+    left: 250px;
+  }
+
 }
