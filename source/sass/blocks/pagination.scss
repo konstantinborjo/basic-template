@@ -40,11 +40,11 @@
   background: none;
 }
 
-.pagination__link--next {
+.pagination__next {
   display: none;
 }
 
-.pagination__link--back {
+.pagination__back {
   display: none;
 }
 
@@ -56,32 +56,40 @@
     justify-content: flex-end;
   }
 
-  .pagination__link--icon {
+  .pagination__icon {
     display: none;
+  }
+
+  .pagination__next {
+    width: 91px;
+    display: flex;
+    justify-content: center;
   }
 
   .pagination__link--next {
     width: 91px;
-    display: flex;
-    justify-content: center;
   }
 
-  .pagination__item--next {
-    width: 104px;
-  }
+.pagination__item--back{
+  width: 91px;
+}
 
-  .pagination__link--back{
+.pagination__item--next{
+  width: 91px;
+}
+
+  .pagination__back{
     width: 91px;
     display: flex;
     justify-content: center;
   }
 
-  .pagination__item--back{
-    width: 104px;
+  .pagination__link--back{
+    width: 91px;
   }
 
   .pagination__list{
-    width: 408px;
+    width: 395px;
     margin: 20px 0 90px;
   }
 }
