@@ -5,8 +5,22 @@
 .main-footer__social{
   display: flex;
   justify-content: space-between;
-  width: 280px;
   align-items: center;
   margin-top: 20px;
   border-bottom: 1px solid #F0EBFF;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__logo-image{
+    width: 170px;
+    height: 36px;
+  }
+
+  .main-footer__social{
+    border: none;
+  }
+
+  .main-footer__ithernet{
+    border: none;
+  }
 }

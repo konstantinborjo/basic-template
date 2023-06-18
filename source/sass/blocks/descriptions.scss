@@ -20,3 +20,16 @@
   line-height: 20px;
   color: #333333;
 }
+
+@media (min-width: $tablet-width) {
+  .descriptions__title {
+    width: 289px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .descriptions__text{
+    width: 289px;
+  }
+}

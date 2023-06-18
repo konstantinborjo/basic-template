@@ -30,6 +30,12 @@
   background-image: url("../../img/teg.svg");
   background-repeat: no-repeat;
   background-position: top 0px left 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  display: flex;
 }
 
 .contacts__tel {
@@ -44,5 +50,5 @@
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-
+display: flex;
 }

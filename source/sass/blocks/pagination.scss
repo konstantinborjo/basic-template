@@ -13,12 +13,12 @@
 
 .pagination__item {
   width: 40px;
-  height: 40px;
+  min-height: 40px;
 }
 
 .pagination__link {
   width: 40px;
-  height: 40px;
+  min-height: 40px;
   background: #ffffff;
   border-radius: 4px;
   color: #7859CF;
@@ -38,4 +38,48 @@
   text-align: center;
   color: #333333;
   background: none;
+}
+
+.pagination__link--next {
+  display: none;
+}
+
+.pagination__link--back {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .pagination {
+    margin-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .pagination__link--icon {
+    display: none;
+  }
+
+  .pagination__link--next {
+    display: flex;
+    width: 104px;
+  }
+
+  .pagination__item--next {
+    width: 104px;
+  }
+
+  .pagination__link--back{
+    width: 104px;
+    display: flex;
+  }
+
+  .pagination__item--back{
+    width: 104px;
+  }
+
+  .pagination__list{
+    width: 408px;
+    margin: 20px 0 90px;
+  }
 }

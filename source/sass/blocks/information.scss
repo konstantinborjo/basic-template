@@ -1,0 +1,7 @@
+@media (min-width: $tablet-width) {
+  .information {
+    display: grid;
+    grid-template-columns: 197px 222px 247px;
+    grid-column-gap: 30px;
+  }
+}

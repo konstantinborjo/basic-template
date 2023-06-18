@@ -5,7 +5,7 @@
   margin-top: 44px;
 }
 
-.cards__item{
+.cards__item {
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -13,10 +13,29 @@
   margin-bottom: 20px;
 }
 
-.cards__wrapper{
+.cards__wrapper {
   padding: 20px 20px;
 }
 
-.cards__img{
+.cards__img {
   margin: 20px 50px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .cards__item {
+    width: 349px;
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  .cards__img{
+    margin: 20px 76px
+  }
 }
