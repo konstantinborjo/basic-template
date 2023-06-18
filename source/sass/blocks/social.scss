@@ -7,6 +7,20 @@
 .social__link{
   padding: 10px;
   color: #bdbdbd;
+  align-items: center;
+  display: flex;
+}
+
+.social__link:hover, .social__link:focus{
+  background: #F0EBFF;
+  color: #7859CF;
+  border-radius: 4px;
+}
+
+.social__link:active{
+  background: rgba(120, 89, 207, 0.25);
+  border-radius: 4px;
+  color: #7859CF;
 }
 
 @media (min-width: $desktop-width) {

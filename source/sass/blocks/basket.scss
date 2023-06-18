@@ -20,3 +20,16 @@
   line-height: 32px;
   color: #333333;
 }
+
+.basket__button:hover,
+.basket__button:focus{
+  background: #9070EC;
+}
+
+.basket__button:active{
+  background: #593CAC;
+}
+
+.basket__button:disabled{
+  background: #BDBDBD;
+}

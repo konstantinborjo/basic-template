@@ -1,4 +1,4 @@
-.submit{
+.submit {
   border: none;
   display: flex;
   flex-direction: column;
@@ -8,30 +8,59 @@
   padding: 0;
 }
 
-.submit__button{
+.submit__button {
   width: 280px;
   padding: 8px;
   border: none;
 }
 
-.submit__button--reset{
+.submit__button--reset {
   background: #ffffff;
   color: #7859cf;
 }
 
+.submit__button--ok:hover,
+.submit__button--ok:focus {
+  background: #9070EC;
+}
+
+.submit__button--ok:active{
+  background: #593CAC;
+}
+
+.submit__button--ok:disabled{
+  background: #BDBDBD;
+}
+
+.submit__button--reset:hover,
+.submit__button--reset:focus {
+  background: #9070EC;
+  color: #ffffff;
+}
+
+.submit__button--reset:active{
+  background: #593CAC;
+  color: #ffffff;
+}
+
+.submit__button--reset:disabled{
+  background: #E2E2E2;
+  color: #ffffff;
+}
+
 @media (min-width: $tablet-width) {
-  .submit__button{
+  .submit__button {
     width: 140px;
   }
 
-  .submit{
+  .submit {
     margin: 87px 206px 0;
     flex-direction: row;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .submit{
+  .submit {
     margin: 0;
     margin-top: 40px;
     justify-content: flex-start;

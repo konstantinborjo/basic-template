@@ -37,6 +37,19 @@
   padding: 8px 20px;
 }
 
+.price__button:hover,
+.price__button:focus{
+  background: #9070EC;
+}
+
+.price__button:active{
+  background: #593CAC;
+}
+
+.price__button:disabled{
+  background: #BDBDBD;
+}
+
 
 @media (min-width: $desktop-width) {
   .price {
