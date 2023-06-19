@@ -1,12 +1,37 @@
 .academy__link {
   text-decoration: none;
-  margin: 0 auto;
-  padding: 20px 0 30px 0;
-  width: 240px;
+  width: 115px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #BDBDBD;
   display: flex;
+  margin-left: 3px;
+  justify-content: space-between;
+}
+
+.academy__link:hover,
+.academy__link:focus {
+  color: #7859CF;
+}
+
+.academy__link:active {
+  color: #593CAC;
+}
+
+.academy {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.academy__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #BDBDBD;
 }

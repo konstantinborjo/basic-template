@@ -17,11 +17,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-picture{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .main-picture__pic {
     width: 600px;
     height: 600px;
-    position: absolute;
-    bottom: 80px;
-    left: 135px;
+    position: relative;
+    bottom: 0;
+    left: 0;
   }
 }
