@@ -1,5 +1,4 @@
 .header-image {
-  position: relative;
   min-height: 656px;
   font-family: $main-font;
   font-style: normal;
@@ -50,11 +49,11 @@
     line-height: 80px;
     text-align: center;
     letter-spacing: 0.02em;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .header-image__description {
-    width: 608px;
+    width: 555px;
     font-size: 20px;
     line-height: 32px;
   }
@@ -79,6 +78,7 @@
     font-size: 56px;
     line-height: 80px;
     text-align: left;
+    margin: 0;
   }
 
   .header-image__description {

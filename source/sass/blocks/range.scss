@@ -38,13 +38,16 @@
   .range__bar {
     width: 192px;
   }
-
   .range {
     width: 223px;
   }
+
+  .range__toggle--max{
+    left: 175px;
+  }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .range__bar {
     width: 274px;
   }

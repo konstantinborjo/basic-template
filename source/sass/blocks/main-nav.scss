@@ -1,29 +1,22 @@
 .main-nav__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  margin-top: 7px;
-  width: 280px;
-  background-color: #ffffff;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9;
   position: absolute;
-  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 53px;
+
 }
 
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    position: absolute;
-    top: 8px;
-    left: 165px;
-  }
-
   .main-nav__list {
-    width: 400px;
+    width: 355px;
+    position: static;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav{
-    left: 520px;
-  }
-}
+@media (min-width: $desktop-width) {}

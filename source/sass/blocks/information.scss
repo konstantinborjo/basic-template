@@ -1,14 +1,13 @@
 @media (min-width: $tablet-width) {
   .information {
     display: grid;
-    grid-template-columns: 197px 222px 247px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .information {
-    grid-template-columns: 318px 318px 318px;
     margin-top: 10px;
   }
 }

@@ -13,6 +13,13 @@
 
 @media (min-width: $tablet-width) {
   .input__field{
+    width: 55px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .input__field{
     width: 114px;
   }
 

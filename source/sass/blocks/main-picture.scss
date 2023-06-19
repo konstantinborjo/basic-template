@@ -1,16 +1,18 @@
 .main-picture__pic {
   margin-top: 20px;
-  position: relative;
-}
+  }
 
 @media (min-width: $tablet-width) {
+ .main-picture{
+  position: relative;
+ }
 
   .main-picture__pic {
     width: 476px;
     height: 476px;
     position: absolute;
-    bottom: -170px;
-    left: 146px;
+    bottom: -495px;
+    left: 120px;
     margin: 0;
   }
 

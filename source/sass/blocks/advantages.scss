@@ -5,7 +5,9 @@
 }
 
 .advantages__title {
+  display: flex;
   width: 119px;
+  margin: 0 auto;
 }
 
 .advantages__causes {
@@ -38,11 +40,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages__wrapper{
+  .advantages__wrapper {
     margin-top: 100px;
   }
 
-  .advantages__causes{
+  .advantages__causes {
     width: 1360px;
     margin: 0 auto;
   }
