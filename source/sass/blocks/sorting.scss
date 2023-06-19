@@ -45,6 +45,10 @@
   }
 
   @media (min-width: $desktop-width) {
+.sorting{
+  margin-top: 30px;
+}
+
 .sorting__wrapper{
   margin: 0;
   justify-content: flex-start;
