@@ -1,6 +1,9 @@
 .check__field {
   display: none;
 }
+.check__wrapper--disabled{
+  opacity: 0.3;
+}
 
 .check__wrapper {
   position: relative;
@@ -20,13 +23,16 @@
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 34px;
+  border: 2px solid #f8f8f8;
 }
+
+
 
 .check__description:before {
   position: absolute;
   content: "";
-  height: 19px;
-  width: 19px;
+  height: 16px;
+  width: 16px;
   left: -1px;
   bottom: 3px;
   background-color: white;
@@ -37,10 +43,24 @@
 
 .check__field:checked+.check__description {
   background-color: #7859CF;
+  border: 2px solid #7859CF;
+}
+
+.check__field--disabled:checked+.check__description{
+  background: #E2E2E2;
+  border-color: #e2e2e2;
+  opacity: 1;
 }
 
 .check__field:focus+.check__description {
   box-shadow: 0 0 1px #7859CF;
+}
+
+.check__description:hover{
+  background: rgba(120, 89, 207, 0.25);
+/* Alt/Primary-Lighter */
+
+border: 2px solid #9070EC;
 }
 
 .check__field:checked+.check__description:before {

@@ -39,13 +39,27 @@
   color: #333333;
 }
 
-.header-image__arrow{
+.header-image__arrow {
   position: absolute;
   top: 50%;
   transform: translateX(-50%);
+  padding: 10px 15px;
+  color: #7859CF;
 }
 
-.header-image__arrow--right{
+.header-image__arrow:hover,
+.header-image__arrow:focus {
+  background: #9070EC;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.header-image__arrow:active{
+  background: #593CAC;
+  color: #ffffff;
+}
+
+.header-image__arrow--right {
   right: 0;
 }
 

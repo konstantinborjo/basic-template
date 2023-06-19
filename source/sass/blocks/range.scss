@@ -22,6 +22,7 @@
   border-radius: 50%;
 }
 
+
 .range__toggle--min {
   position: absolute;
   top: -10px;
@@ -38,11 +39,12 @@
   .range__bar {
     width: 192px;
   }
+
   .range {
     width: 223px;
   }
 
-  .range__toggle--max{
+  .range__toggle--max {
     left: 175px;
   }
 }

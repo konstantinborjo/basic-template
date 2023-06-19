@@ -256,10 +256,10 @@
                       </label>
                     </li>
                     <li class="country__item check  disabled">
-                      <label class="check__wrapper " for="peru">
-                        <input class="check__field" type="checkbox" id="peru" name="argentina" value="Перу">
+                      <label class="check__wrapper check__wrapper--disabled " for="peru">
+                        <input class="check__field check__field--disabled" type="checkbox" id="peru" name="argentina" value="Перу">
 
-                        <span class="check__description"></span>
+                        <span class="check__description check__description--disabled"></span>
                         <span class="check__country">Перу</span>
 
                       </label>
@@ -278,10 +278,11 @@
                 <div class="sorting__wrapper">
                   <span class="sorting__title">Сортировка:</span>
                   <select class="sorting__field" aria-label="Сортировка">
-                    <option value="default">по умолчанию</option>
-                    <option value="expensive">сначала дорогие</option>
-                    <option value="cheap">сначала дешёвые</option>
-                    <option value="rating">высокий рейтинг</option>
+                    <option class="sorting_value" value="default">по умолчанию</option>
+                    <option class="sorting_value" value="expensive">сначала дорогие</option>
+                    <option class="sorting_value" value="expensive">сначала дорогие</option>
+                    <option class="sorting_value" value="cheap">сначала дешёвые</option>
+                    <option class="sorting_value" value="rating">высокий рейтинг</option>
                   </select>
                 </div>
                 <ul class="catalog-list cards">

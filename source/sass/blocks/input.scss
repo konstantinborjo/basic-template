@@ -11,6 +11,18 @@
   text-align: center;
 }
 
+.input__field::placeholder{
+  color: #bdbdbd;
+}
+
+.input__field:focus{
+  border-color: #593CAC;
+}
+
+.input__field:disabled{
+  border-color: #bdbdbd;
+  color: #bdbdbd;
+}
 @media (min-width: $tablet-width) {
   .input__field{
     width: 55px;
