@@ -1,24 +1,31 @@
-.slider-lamp{
-  display: flex;
-  gap: 8px;
-  position: relative;
-  justify-content: center;
+.slider-lamp {
+  display: none;
 }
 
-.slider-lamp__1{
-  height: 4px;
-  width: 62px;
-  background-color: #7859cf;
-}
+@media (min-width: $desktop-width) {
 
-.slider-lamp__2{
-  height: 4px;
-  width: 62px;
-  background-color: #ffffff;
-}
+  .slider-lamp {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    justify-content: center;
+  }
 
-.slider-lamp__3{
-  height: 4px;
-  width: 62px;
-  background-color: #ffffff;
+  .slider-lamp__1 {
+    height: 4px;
+    width: 62px;
+    background-color: #7859cf;
+  }
+
+  .slider-lamp__2 {
+    height: 4px;
+    width: 62px;
+    background-color: #ffffff;
+  }
+
+  .slider-lamp__3 {
+    height: 4px;
+    width: 62px;
+    background-color: #ffffff;
+  }
 }
