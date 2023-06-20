@@ -21,6 +21,10 @@
   margin: 20px 55px;
 }
 
+.cards__link{
+  cursor: pointer;
+}
+
 
 @media (min-width: $tablet-width) {
   .cards__item {
