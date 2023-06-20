@@ -129,7 +129,7 @@
     min-height: 80px;
     display: flex;
     width: 733px;
-    justify-content: space-between;
+    justify-content:flex-start;
   }
 
   .main-header__logo-image {
@@ -142,7 +142,8 @@
   }
 
   .main-header__test {
-    width: 90px;
+    width: 98px;
+    margin-left: 106px;
   }
 }
 

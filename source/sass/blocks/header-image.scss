@@ -52,8 +52,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header-image{
+    min-height: 638px;
+  }
+
+  .header-image__wrapper{
+    margin: 0;
+  }
+
   .header-image__container {
-    padding-top: 60px;
+    padding-top: 55px;
   }
 
   .header-image__name {
@@ -63,12 +71,23 @@
     text-align: center;
     letter-spacing: 0.02em;
     margin: 0 auto;
+    margin-top: 3px;
   }
 
   .header-image__description {
     width: 555px;
     font-size: 20px;
     line-height: 32px;
+    margin: 16px 94px 0px;
+  }
+
+  .header-image__arrow{
+    top: 47%;
+    transform: translateX(124%);
+  }
+
+  .header-image__arrow--right{
+    right: 48px;
   }
 
 

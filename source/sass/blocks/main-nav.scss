@@ -13,6 +13,12 @@
 
 
 @media (min-width: $tablet-width) {
+  .main-nav{
+    margin-left: 22px;
+    margin-bottom: 5px;
+}
+
+
   .main-nav__list {
     width: 355px;
     position: static;

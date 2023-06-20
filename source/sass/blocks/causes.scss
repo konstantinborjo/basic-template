@@ -16,7 +16,7 @@
   margin-top: 28px;
 }
 
-.causes__item--ecology{
+.causes__item--ecology {
   margin-top: 28px;
 }
 
@@ -95,48 +95,57 @@
 
 @media (min-width: $tablet-width) {
   .causes {
+    margin: 0;
+    margin-top: 39px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style-type: none;
-    padding: 0 10px;
-    margin: 0;
-    grid-row-gap: 50px;
-    grid-column-gap: 30px;
+    grid-row-gap: 48px;
+    grid-column-gap: 7px;
   }
 
   .causes__item {
-    padding-left: 72px;
+    padding-left: 82px;
     min-height: 118px;
     gap: 10px;
+    margin: 0;
   }
 
   .causes__title {
     text-align: left;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    margin: 0 0 2px;
   }
 
   .causes__description {
     text-align: left;
-    width: 225px;
+    width: 267px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .causes__item--speed::before {
-    top: 36px;
+    top: 25px;
     left: 10px;
   }
 
   .causes__item--comfort::before {
-    top: 33px;
-    right: 293px;
+    top: 21px;
+    left: 10px;
   }
 
   .causes__item--energy::before {
-    top: 14px;
-    right: 292px;
+    top: 0px;
+    left: 10px;
   }
 
   .causes__item--ecology::before {
-    top: 14px;
-    right: 292px;
+    top: 0px;
+    left: 10px;
   }
 }
 
