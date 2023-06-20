@@ -9,7 +9,7 @@
   font-size: 18px;
   line-height: 32px;
   color: #333333;
-  margin-bottom: 5px;
+  margin:0;
 }
 
 .descriptions__text {
@@ -19,6 +19,8 @@
   font-size: 14px;
   line-height: 20px;
   color: #333333;
+  margin: 0;
+  margin-top: 3px;
 }
 
 @media (min-width: $tablet-width) {

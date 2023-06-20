@@ -4,10 +4,22 @@
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  min-height: 142px;
-  margin-top: 20px;
-  // padding-top: 138px;
+  min-height: 146px;
+  margin-top: 31px;
 }
+
+.causes__item--comfort {
+  margin-top: 28px;
+}
+
+.causes__item--energy {
+  margin-top: 28px;
+}
+
+.causes__item--ecology{
+  margin-top: 28px;
+}
+
 
 .causes__title {
   width: 280px;
@@ -19,6 +31,7 @@
   color: #333333;
   text-decoration: none;
   margin: 0;
+  margin-bottom: 4px;
 }
 
 .causes__description {
@@ -34,7 +47,7 @@
 
 .causes__item--speed::before {
   position: absolute;
-  top: 0;
+  top: 4px;
   right: 116px;
   background-image: url("../../img/clock.svg");
   background-repeat: no-repeat;
@@ -46,8 +59,8 @@
 
 .causes__item--comfort::before {
   position: absolute;
-  top: 10px;
-  right: 109px;
+  top: 4px;
+  right: 114px;
   background-image: url("../../img/pocket.svg");
   background-repeat: no-repeat;
   content: "";
@@ -58,8 +71,8 @@
 
 .causes__item--energy::before {
   position: absolute;
-  top: 10px;
-  right: 109px;
+  top: 4px;
+  right: 114px;
   background-image: url("../../img/flash.svg");
   background-repeat: no-repeat;
   content: "";
@@ -70,8 +83,8 @@
 
 .causes__item--ecology::before {
   position: absolute;
-  top: 10px;
-  right: 109px;
+  top: 4px;
+  right: 114px;
   background-image: url("../../img/tree.svg");
   background-repeat: no-repeat;
   content: "";

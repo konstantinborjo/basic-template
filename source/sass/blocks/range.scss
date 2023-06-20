@@ -3,14 +3,14 @@
   height: 4px;
   background-color: #E2E2E2;
   width: 280px;
-  margin-top: 20px;
+  margin-top: 29px;
 }
 
 .range__bar {
   position: absolute;
   height: 4px;
   background-color: #9070EC;
-  width: 228px;
+  width: 238px;
 }
 
 .range__toggle {
@@ -32,7 +32,7 @@
 .range__toggle--max {
   position: absolute;
   top: -10px;
-  left: 207px;
+  left: 237px;
 }
 
 @media (min-width: $tablet-width) {

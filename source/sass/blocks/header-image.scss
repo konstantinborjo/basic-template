@@ -16,7 +16,7 @@
   letter-spacing: 0.02em;
   color: #333333;
   width: 280px;
-  margin: 0 auto;
+  margin: 3px auto;
 
 }
 
@@ -26,6 +26,7 @@
 
 .header-image__wrapper {
   text-align: center;
+  margin-top: 3px;
 }
 
 .header-image__description {
@@ -41,22 +42,9 @@
 
 .header-image__arrow {
   position: absolute;
-  top: 50%;
-  transform: translateX(-50%);
-  padding: 10px 15px;
+  top: 49%;
+  transform: translateX(-93%);
   color: #7859CF;
-}
-
-.header-image__arrow:hover,
-.header-image__arrow:focus {
-  background: #9070EC;
-  border-radius: 4px;
-  color: #ffffff;
-}
-
-.header-image__arrow:active{
-  background: #593CAC;
-  color: #ffffff;
 }
 
 .header-image__arrow--right {
@@ -82,6 +70,19 @@
     font-size: 20px;
     line-height: 32px;
   }
+
+
+.header-image__arrow:hover,
+.header-image__arrow:focus {
+  background: #9070EC;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.header-image__arrow:active{
+  background: #593CAC;
+  color: #ffffff;
+}
 }
 
 @media (min-width: $desktop-width) {
